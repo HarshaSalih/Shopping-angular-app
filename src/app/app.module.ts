@@ -5,6 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddShoppingComponent } from './add-shopping/add-shopping.component';
 import { ViewShoppingComponent } from './view-shopping/view-shopping.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:AddShoppingComponent
+  },
+  {
+    path:"view",
+    component:ViewShoppingComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -14,7 +26,8 @@ import { ViewShoppingComponent } from './view-shopping/view-shopping.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
