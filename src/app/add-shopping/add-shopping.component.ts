@@ -7,4 +7,29 @@ import { Component } from '@angular/core';
 })
 export class AddShoppingComponent {
 
-}
+  title=""
+  description=""
+  image=""
+  price=""
+  sellerName=""
+  quantity=""
+
+
+
+  readValues=()=>
+  {
+    let data:any={"title":this.title,"price":this.price,"description":this.description,"image":this.image,"sellerName":this.sellerName,"quantity":this.quantity}
+    console.log(data)
+  
+  }
+  }
+
+
+
+
+
+
+
+
+
+
