@@ -10,7 +10,7 @@ export class ViewShoppingComponent {
 
   constructor(private api:ApiService)
   {
-    api.fetchCourses().subscribe(
+    api.fetchProduct().subscribe(
       (response)=>{
         this.shopping=response;
       }

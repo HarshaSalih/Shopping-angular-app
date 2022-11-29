@@ -8,7 +8,6 @@ import { ViewShoppingComponent } from './view-shopping/view-shopping.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
-import { ViewNewsComponent } from './view-news/view-news.component';
 import { HttpClientModule } from '@angular/common/http';
 
 const myRoute:Routes=[
@@ -19,11 +18,8 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewShoppingComponent
-  },
-  {
-    path:"news",
-    component:ViewNewsComponent
   }
+ 
   
 
 ]
@@ -33,8 +29,8 @@ const myRoute:Routes=[
     AppComponent,
     AddShoppingComponent,
     ViewShoppingComponent,
-    NavbarComponent,
-    ViewNewsComponent
+    NavbarComponent
+    
   ],
   imports: [
     BrowserModule,
