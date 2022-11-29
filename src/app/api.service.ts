@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
   constructor(private http:HttpClient) { }
-  fetchCourses=()=>
+  fetchProduct=()=>
   {
     return this.http.get("https://fakestoreapi.com/products")
   }
